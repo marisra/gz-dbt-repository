@@ -9,4 +9,10 @@ SELECT
     CAST(s.revenue as float64) - ROUND(CAST(s.quantity as float64)*CAST(p.purchase_price as float64),2) AS margin
 FROM {{ref("stg_raw__sales")}} s
 LEFT JOIN {{ref("stg_raw__product")}} p 
-		USING (products_id)
+	USING (products_id)
+
+
+
+
+
+      
